@@ -1,0 +1,121 @@
+/* CSS 文字覆盖图像悬停效果 */
+.container {
+    position: relative;
+    width: 30%;
+}
+.image {
+    display: block;
+    width: 75%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 75%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* CSS 文字覆盖图像悬停效果 - 从上至下 */
+/* .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 75%;
+    height:0;
+    transition: .5s ease;
+}
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}  */
+
+/* CSS 文字覆盖图像悬停效果 – 从下至上 */
+/* .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 75%;
+    height: 0;
+    transition: .5s ease;
+}
+.container:hover .overlay {
+    height: 100%;
+} */
+
+/* CSS 文字覆盖图像悬停效果 – 从右至左 */
+/* .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.container:hover .overlay {
+    width: 75%;
+    left: 0;
+} */
+
+/* CSS 文字覆盖图像悬停效果 – 从左至右 */
+/* .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.container:hover .overlay {
+    width: 75%;
+} */
+
+/* CSS 文字覆盖图像悬停效果 – 淡入透明 */
+/* .image {
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: auto;
+  transition: 1s ease;
+  backface-visibility:hidden;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.text {
+  width: auto;
+  height: auto;
+  color: rgb(2, 0, 0);
+  font-size: 16px;
+  padding: 16px 32px;
+} */

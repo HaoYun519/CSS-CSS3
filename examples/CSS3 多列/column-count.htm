@@ -1,0 +1,75 @@
+<!-- column-count 属性指定了需要分割的列数。
+以下实例将 <div> 元素中的文本分为 3 列： -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style> 
+.newspaper
+{
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+}
+</style>
+</head>
+<body>
+
+<p><b>注意:</b> Internet Explorer 9及更早 IE 版本浏览器不支持 column-count 属性。</p>
+
+<div class="newspaper">
+“当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。”
+</div>
+
+</body>
+</html>
+
+以下实例指定了列与列间的间隙为 40 像素：
+div {
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+column-rule-style 属性指定了列与列间的边框样式：
+div {
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+}
+
+column-rule-width 属性指定了两列的边框厚度:
+div {
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+}
+
+column-rule-color 属性指定了两列的边框颜色：
+div {
+    -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: lightblue; /* Firefox */
+    column-rule-color: lightblue;
+}
+
+column-rule 属性是 column-rule-* 所有属性的简写。
+以下实例设置了列直接的边框的厚度，样式及颜色：
+div {
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue;
+}
+
+以下实例指定 <h2> 元素跨越所有列：
+h2 {
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
+}
+
+column-width 属性指定了列的宽度。
+div {
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    column-width: 100px;
+}

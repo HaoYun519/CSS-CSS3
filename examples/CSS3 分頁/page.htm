@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+</style>
+</head>
+<body>
+
+<h2>简单的分页</h2>
+<ul class="pagination">
+  <li><a href="#">«</a></li>
+  <li><a href="#">1</a></li>
+  <li><a class="active" href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">6</a></li>
+  <li><a href="#">7</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+
+</body>
+</html>
+
+<!-- 可以使用 border-radius 属性为选中的页码来添加圆角样式:
+ul.pagination li a {
+    border-radius: 5px;
+}
+ul.pagination li a.active {
+    border-radius: 5px;
+} -->
+
+<!-- 通过添加 transition 属性来为鼠标移动到页码上时添加过渡效果:
+ul.pagination li a {
+    transition: background-color .3s;
+} -->
+
+<!-- 我们可以使用 border 属性来添加带边框分页:
+ul.pagination li a {
+    border: 1px solid #ddd; /* Gray */
+} -->
+
+<!-- 在第一个分页链接和最后一个分页链接添加圆角：
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} -->
+
+<!-- 可以使用 margin 属性来为每个页码直接添加空格：
+ul.pagination li a {
+    margin: 0 4px; /* 0 对应的是头部与底部，可以修改它看看效果 */
+} -->
+
+<!-- 可以使用 font-size 属性来设置分页的字体大小:
+ul.pagination li a {
+    font-size: 22px;
+} -->
+
+<!-- 要让分页居中，可以在容器元素上 (如 <div>) 添加 text-align:center 样式：
+div.center {
+    text-align: center;
+} -->
+
+<!-- 另外一种导航为面包屑导航
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+} -->
+
+<!-- ul.breadcrumb li {display: inline;} -->
+
+<!-- ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+} -->

@@ -1,0 +1,102 @@
+<!-- 什麼是「偽元素」？
+「偽元素」之所以稱作「偽」，除了英文從「Pseudo」翻譯過來之外，就是因為它並不是真正網頁裡的元素，
+但行為與表現又和真正網頁元素一樣，也可以對其使用 CSS 操控。
+
+跟偽元素類似的還有「偽類」( Pseudo classes )，在 W3C 的定義裡總共有五個偽元素 ( 其他仍在測試階段 )，
+分別是::before、::after、::first-line、::first-letter和::selection，
+為了和偽類區分，偽元素使用兩個冒號「::」開頭，而偽類使用一個冒號「:」開頭 ( 像是 :hover、:target...等 )。
+
+雖然現在的瀏覽器就算寫一個冒號也可以正常運作，不過為了方便區分，用兩個冒號還是比較好的，
+而且不論瀏覽器是什麼，::selection必須是兩個冒號才能正常運作。 -->
+
+<!-- 把文本的第一个字母设为特殊的字母
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+p:first-letter{
+	color:#ff0000;
+	font-size:xx-large;}
+</style>
+</head>
+<body>
+<p>你可以使用 "first-letter" 伪元素向文本的首字母设置特殊样式：</p>
+</body>
+</html> -->
+
+<!-- 把第一行文字设置为特殊 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+p:first-line{
+color:#ff0000;
+font-variant:small-caps;}
+</style>
+</head>
+<body>
+<p>你可以使用 "first-line" 伪元素向文本的首行设置特殊样式。</p>
+</body>
+</html> -->
+
+<!-- 把第一行文字的第一个字母设置为特殊 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+p:first-letter{
+	color:#ff0000;
+	font-size:xx-large;}
+p:first-line {
+	color:#0000ff;
+	font-variant:small-caps;}
+</style>
+</head>
+
+<body>
+<p>你可以结合使用"first-line"和"first-letter"伪元素向文本的首行和首字母
+设置特殊样式。</p>
+</body>
+</html> -->
+
+<!-- 使用：在一个元素之前插入一些内容 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+h1:before {content:url(smiley.gif);}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>The :before pseudo-element inserts content before an element.</p>
+<h1>This is a heading</h1>
+<p><b>注意:</b>仅当 !DOCTYPE 已经声明 IE8 支持这个内容属性</p>
+</body>
+</html> -->
+
+<!-- 使用：在一个元素之后插入一些内容 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+h1:after {content:url(smiley.gif);}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>The :after pseudo-element inserts content after an element.</p>
+<h1>This is a heading</h1>
+<p><b>注意:</b>仅当!DOCTYPE 已经声明 IE8支持这个内容属性.</p>
+</body>
+</html> -->

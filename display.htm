@@ -1,0 +1,101 @@
+<!-- 如何隐藏一个元素(visibility:hidden)
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+h1.hidden {visibility:hidden;}
+</style>
+</head>
+<body>
+<h1>这是一个可见标题</h1>
+<h1 class="hidden">这是一个隐藏标题</h1>
+<p>注意, 实例中的隐藏标题仍然占用空间。</p>
+</body>
+</html> -->
+
+<!-- 如何不显示元素(display:none)
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+h1.hidden {display:none;}
+</style>
+</head>
+<body>
+<h1>这是一个可见标题</h1>
+<h1 class="hidden">这是一个隐藏标题</h1>
+<p>注意, 实例中的隐藏标题不占用空间。</p>
+</body>
+</html> -->
+
+<!-- 如何显示一个元素的内联元素
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+p {display:inline;}
+</style>
+</head>
+
+<body>
+<p>display 属性的值为 "inline"的结果</p>
+<p>两个元素显示在同一水平线上。</p>
+</body>
+</html> -->
+
+<!-- 如何显示一个元素的块元素
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+span{display:block;}
+</style>
+</head>
+<body>
+<span>display 属性值为 "block" 的结果</span>
+<span>这两个元素之间的换行符。</span>
+</body>
+</html> -->
+
+<!-- 如何使用表格的collapse属性
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+table, th, td {border: 1px solid black;}
+tr.collapse {visibility: collapse;}
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr class="collapse">
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+<p><b>注意:</b> IE8 及其更早版本需要通过指定 !DOCTYPE 才可以支持 visibility:collapse。</p>
+</body>
+</html> -->
+
+<!-- 
+tr.collapse {visibility: visible;}  可見的
+tr.collapse {visibility: hidden;}   隱藏但占空間
+tr.collapse {visibility: collapse;} 隱藏且不占空間 -->
